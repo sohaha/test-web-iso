@@ -8,18 +8,18 @@ import { StateContextProvider } from './context/state-context.js'
 
 export function App() {
   return (
-    <StateContextProvider>
-      <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
-        <LocationProvider>
-          <main>
-            <Router>
-              <Route path='/' component={Home} />
-              <Route default component={NotFound} />
-            </Router>
-          </main>
-        </LocationProvider>
-      </ThemeProvider>
-    </StateContextProvider>
+    // <StateContextProvider>
+    <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
+      <LocationProvider>
+        <main>
+          <Router>
+            <Route path='/' component={Home} />
+            <Route default component={NotFound} />
+          </Router>
+        </main>
+      </LocationProvider>
+    </ThemeProvider>
+    // </StateContextProvider>
   )
 }
 
